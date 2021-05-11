@@ -8,4 +8,17 @@ const swiper = new Swiper('.swiper-container', {
     prevEl: '.slider-button--prev',
   },
 
+  //effect: "cube",
+  // тащим слайды мышкой
+  simulateTouch: true,
+  // хватаем слайды 'лапкой'
+  grabCursor: true,
+
+  // Управление с клавиатуры
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  }
+
 });
