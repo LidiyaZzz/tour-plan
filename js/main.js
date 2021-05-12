@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   loop: true,
 
@@ -19,6 +19,6 @@ const swiper = new Swiper('.swiper-container', {
     enabled: true,
     onlyInViewport: true,
     pageUpDown: true,
-  }
+  },
 
 });
