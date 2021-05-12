@@ -667,6 +667,12 @@ template {
   background-image: url(../img/arrow-prev.svg);
 }
 
+.swiper-slide__image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .booking {
   background-color: #0A223D;
   color: #FFFFFF;
