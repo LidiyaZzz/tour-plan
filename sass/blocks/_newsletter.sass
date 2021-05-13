@@ -1,9 +1,5 @@
 .newsletter
   padding: 98px 0 87px 0
-  background-image: url(../img/newsletter-bg.jpg)
-  background-repeat: no-repeat
-  background-position: center
-  background-size: cover
   position: relative
   &:before
     content: ''
@@ -30,6 +26,7 @@
     font-weight: 300
     font-size: 24px
     line-height: 30px
+    max-width: 450px
     &__strong
       font-style: normal
       font-weight: 600
@@ -38,7 +35,7 @@
       text-transform: uppercase
 .subscripe
   position: relative
-  width: 355px
+  width: 350px
   height: 55px
   border-radius: 4px
   overflow: hidden
@@ -62,3 +59,6 @@
     border: none
     background-color: $primary
     color: $light
+
+.parallax-window
+  min-height: 260px

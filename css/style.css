@@ -814,10 +814,6 @@ template {
 
 .newsletter {
   padding: 98px 0 87px 0;
-  background-image: url(../img/newsletter-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   position: relative;
 }
 
@@ -861,6 +857,7 @@ template {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  max-width: 450px;
 }
 
 .newsletter-title__strong {
@@ -873,7 +870,7 @@ template {
 
 .subscripe {
   position: relative;
-  width: 355px;
+  width: 350px;
   height: 55px;
   border-radius: 4px;
   overflow: hidden;
@@ -901,6 +898,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #FFFFFF;
+}
+
+.parallax-window {
+  min-height: 260px;
 }
 
 .reviews {
