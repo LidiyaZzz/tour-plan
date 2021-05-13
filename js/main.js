@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container.swiper-container--hotel', {
+var mySwiper = new Swiper('.swiper-container--hotel', {
   // Optional parameters
   loop: true,
 
