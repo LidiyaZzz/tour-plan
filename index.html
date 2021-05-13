@@ -104,42 +104,37 @@
       </div><!-- /.hotel-info -->
 
       <div class="hotel-grid">
-        <div class="slider hotel__slider">
-
 
           <!-- Slider main container -->
-          <div class="swiper-container  swiper-container--hotel">
+          <div class="swiper-container hotel-slider hotel__slider">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide.jpg" alt="">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide2.jpg" alt="">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide3.jpg" alt="">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide4.jpg" alt="">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide5.jpg" alt="">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide hotel-slider__item">
                 <img class="swiper-slide__image" src="img/slide6.jpg" alt="">
               </div>
             </div><!-- /.swiper-wrapper -->
             
             <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button--prev"></button>
-            <button class="slider-button slider-button--next"></button>
+            <button class="hotel-slider__button hotel-slider__button--prev"></button>
+            <button class="hotel-slider__button hotel-slider__button--next"></button>
                       
-          </div><!-- /.swiper-container -->
-
-
-        </div><!-- /.slider -->
+          </div><!-- /.swiper-container -->        
 
         <div class="hotel-right">
 
@@ -209,6 +204,57 @@
 
     </div><!-- /.newsletter-wrapper -->
   </section><!-- /.newsletter -->
+
+  <sectoin class="reviews">
+    <div class="container">
+
+      <h2 class="section-title">What people think about us</h2>
+      
+      <!-- Slider main container -->
+      <div class="swiper-container reviews-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          
+          <!-- Slides -->
+          
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+
+              <div class="reviews-slider__profile">
+                
+                <img src="img/reviews-avatar.jpg" alt="photo: Megan Fox" class="reviews-slider__avatar">
+
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+
+                <div class="rating">
+                  <img src="img/star.svg" alt="star-hotel">
+                  <img src="img/star.svg" alt="star-hotel">
+                  <img src="img/star.svg" alt="star-hotel">
+                  <img src="img/star.svg" alt="star-hotel">
+                  <img src="img/star.svg" alt="star-hotel">
+                </div><!-- /.rating -->
+
+
+              </div><!-- /.reviews-slider__profile -->
+            </div><!-- /.reviews-slider__item -->
+          </div><!-- /.swiper-slide -->
+          
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>          
+        </div><!-- /.swiper-wrapper -->
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        
+      </div><!-- /.swiper-container -->
+
+    </div>
+    <!-- /.container -->
+  </sectoin><!-- /.reviews -->
 
 
   <script src="js/swiper-bundle.min.js"></script>
