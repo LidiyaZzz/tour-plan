@@ -1,0 +1,116 @@
+//общий грид-контейнер, состоит из '1+1 1' и '111'
+.packages
+  &-grid
+    display: grid
+    grid-template-rows: 500px 500px
+    grid-template-columns: 350px 350px 350px
+    grid-gap: 30px
+  &-first
+    display: flex
+    border-radius: 8px
+    overflow: hidden
+
+  &-image
+    &__first
+      width: 50%
+      overflow: hidden
+
+  &__image
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &-info
+    width: 50%
+    background: $dark
+    display: flex
+    flex-direction: column
+    justify-content: start
+    padding: 46px 21px 30px 43px
+  &-price
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    &__old
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 18px
+      text-decoration-line: line-through
+      color: $light
+      margin-bottom: 5px
+    &__sale
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+      color: $light
+      margin-bottom: 5px
+    &__button
+      align-items: flex-end
+      width: 120px
+      min-height: 40px
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 19px
+      border-radius: 4px
+      background-color: $primary
+      border: none
+      color: $light
+      cursor: pointer
+
+  &-hotel
+    background-color: #b8972b
+    border: 2px solid #42bec255
+    display: flex
+    border-radius: 8px
+    overflow: hidden
+
+    &__lage
+      grid-column: 1/3
+    &__place
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+    &__star
+      height: 7px
+      width: 7px
+    &__exposition
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+      color: $light
+      margin-bottom: 34px
+    &__room
+      max-width: 203px
+      min-height: 67px
+      display: grid
+      grid-template-rows: 15px 15px
+      grid-template-columns: 15px 1fr
+      grid-gap: 11px
+
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+    &__price
+      display: flex
+      justify-content: space-between
+      margin-top: 37px
+
+  &__icon
+    width: 14px
+    height: 14px
+
+  &__stars
+    margin-bottom: 5px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 23px
+    color: $light
+    margin-bottom: 27px
