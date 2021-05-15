@@ -15,11 +15,12 @@
     min-height: 205px
     padding: 25px 25px
   .map
-    max-width: 347px
+    width: 347px
     min-height: 205px
     &__hotel
       margin-top: 20px
-
+  .activities
+    padding: 60px 0 98px 0
   .card
     width: 220px
     min-height: 220px
@@ -30,6 +31,7 @@
     max-width: 700px
     &-navbar
       max-width: 673px
+
   .newsletter
     padding: 92px 0 87px 0
     &-wrapper
@@ -37,38 +39,44 @@
 
   .logo
     width: 132px
+
   .navbar
     &-top
       padding-top: 30px
-      padding-bottom: 30px
+      padding-bottom: 31px
     &__search
-      margin-left: auto
+      margin-left: 48px
     &-menu
       padding-top: 20px
       padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
+
   .search
     &__input
       width: 340px
+
   .hotel
     padding-bottom: 57px
     &-grid
       flex-direction: column
-    &__slider
-      margin-bottom: 30px
     &-price
       flex-direction: row
     &-slider
-      width: 100%
+      width: 700px
+      height: 450px
+    &__slider
+      margin-bottom: 30px
+
   .booking
-    max-width: 340px
-    min-height: 213px
+    width: 340px
+    min-height: 210px
     padding: 28px 27px
+
   .map
-    max-width: 340px
-    min-height: 213px
+    width: 340px
+    min-height: 210px
     &__hotel
       margin-top: 0px
 
@@ -81,17 +89,24 @@
       &__item
         max-width: 579px
 
-  .activities
-    padding: 45px 0 98px 0
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
     &__title
 
+  .activities
+    padding: 45px 0 98px 0
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+
   .card
     width: 339px
     min-height: 255px
+    &__title
+      max-width: 155px
 
   //------------------767-----------
 @media (max-width: 767px)
@@ -124,6 +139,7 @@
       flex-basis: 100%
     &-wrapper
       justify-content: space-between
+
     &-info
       &__text
         width: 100%
@@ -139,6 +155,7 @@
       flex-direction: column
       min-height: 450px
     &-slider
+      max-width: 100%
       height: 350px
 
   .booking
@@ -195,3 +212,29 @@
   .card
     width: 100%
     min-height: 255px
+  .reviews
+    &__title
+      font-size: 24px
+      line-height: 30px
+    &-slider__text
+      overflow: inherit
+
+@media (max-width: 430px)
+  .navbar
+    &-top
+      padding: 28px 0
+  .newsletter
+    &-title
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+  .reviews
+    &__title
+      font-size: 18px
+      line-height: 23px
+  .activities
+    &__title
+      font-size: 18px
+      line-height: 23px
