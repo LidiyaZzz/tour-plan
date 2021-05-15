@@ -1,3 +1,4 @@
+//----------1200-----------
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -10,14 +11,30 @@
         height: 100%
         width: 100%
         object-fit: cover
-  .card
-    width: 250px
-    min-height: 250px
+  .booking
+    min-height: 205px
+    padding: 25px 25px
+  .map
+    max-width: 347px
+    min-height: 205px
+    &__hotel
+      margin-top: 20px
 
-//
+  .card
+    width: 220px
+    min-height: 220px
+
+//------------992-----------
 @media (max-width: 992px)
-  .container, .newsletter-wrapper
+  .container
     max-width: 700px
+    &-navbar
+      max-width: 673px
+  .newsletter
+    padding: 92px 0 87px 0
+    &-wrapper
+      max-width: 700px
+
   .logo
     width: 132px
   .navbar
@@ -27,7 +44,7 @@
     &__search
       margin-left: auto
     &-menu
-      padding-top: 22px
+      padding-top: 20px
       padding-bottom: 22px
       &__link
         font-size: 12px
@@ -36,6 +53,7 @@
     &__input
       width: 340px
   .hotel
+    padding-bottom: 57px
     &-grid
       flex-direction: column
     &__slider
@@ -45,26 +63,38 @@
     &-slider
       width: 100%
   .booking
-    width: 340px
-
+    max-width: 340px
+    min-height: 213px
+    padding: 28px 27px
   .map
-    width: 340px
+    max-width: 340px
+    min-height: 213px
+    &__hotel
+      margin-top: 0px
+
   .reviews
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
     &-slider
       &__item
         max-width: 579px
 
   .activities
+    padding: 45px 0 98px 0
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
+    &__title
+
   .card
     width: 339px
     min-height: 255px
 
-  //
-@media (max-width: 768px)
+  //------------------767-----------
+@media (max-width: 767px)
   .container
     max-width: 576px
     width: 92%
@@ -146,7 +176,7 @@
     width: 49%
     min-height: 255px
 
-//
+//--------------------576------------
 @media (max-width: 576px)
   .logo
     width: 99px

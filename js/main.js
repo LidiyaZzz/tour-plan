@@ -15,11 +15,11 @@ var hotelSlider = new Swiper('.hotel-slider', {
   grabCursor: true,
 
   // Управление с клавиатуры
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
+  //keyboard: {
+ //   enabled: true,
+  //  onlyInViewport: true,
+ //   pageUpDown: true,
+ // },
 
 });
 
@@ -40,10 +40,10 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   grabCursor: true,
 
   // Управление с клавиатуры
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
+ // keyboard: {
+ //   enabled: true,
+ //   onlyInViewport: true,
+//    pageUpDown: true,
+//  },
 
 });
