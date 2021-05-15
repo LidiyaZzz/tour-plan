@@ -20,6 +20,10 @@ img {
   max-width: 100%;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -447,6 +451,7 @@ template {
   font-size: 12px;
   line-height: 14px;
   color: #333333;
+  cursor: pointer;
 }
 
 .search__button {
