@@ -1,5 +1,5 @@
-//grid-template-rows: minmax(500px, max-content)
-//grid-template-rows: minmax(15px, max-content) 
+//minmax(15px, max-content)
+  //repeat(3 minmax(300px, 350px))
 
 .packages
   padding: 40px 0 70px 0
@@ -14,6 +14,7 @@
     padding: 0
   &__title
     margin-bottom: 65px
+
   &-grid
     display: grid
     grid-template-rows: 500px 500px
@@ -24,53 +25,46 @@
     display: flex
     border-radius: 8px
     overflow: hidden
-    min-height: 424px
-
+    position: relative
+    max-height: 500px
     &-first
       grid-column: 1/3
-      display: flex
-      border-radius: 8px
-      overflow: hidden
-      position: relative
 
   &__cards
     display: flex
     flex-direction: column
+    max-height: 500px
     border-radius: 8px
     overflow: hidden
+    position: relative
 
-    &-successive
-      display: flex
-      border-radius: 8px
-      overflow: hidden
-      position: relative
-
-  &__image
-    width: 100%
-    height: 100%
-    object-fit: cover
+  &__images
     &-first
-      background-color: $blue
       width: 50%
+      background-color: $blue
+      border-radius: 8px
       overflow: hidden
     &-successive
       background-color: $blue
       height: 50%
       overflow: hidden
 
+  &__image
+
   &__info
     width: 50%
     background: $dark
     display: flex
     flex-direction: column
-    justify-content: start
+    justify-content: space-between
     padding: 46px 21px 30px 43px
+
   &__inform
     height: 50%
     background: $dark
     display: flex
     flex-direction: column
-    justify-content: start
+    justify-content: space-between
     padding: 30px 21px 25px 32px
   &__stars
     margin-bottom: 5px
@@ -85,7 +79,6 @@
       font-size: 18px
       line-height: 23px
       color: $light
-      margin-bottom: 27px
 
   &__exposition
     font-style: normal
@@ -93,10 +86,7 @@
     font-size: 14px
     line-height: 160.6%
     color: $light
-    margin-bottom: 34px
-    width: 299px
-    height: 165px
-    overflow: auto
+
   &__room
     max-width: 203px
     min-height: 67px
@@ -118,7 +108,6 @@
   &-price
     display: flex
     justify-content: space-between
-    margin-top: 37px
 
   &__price
     &-all
