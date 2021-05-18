@@ -1325,7 +1325,7 @@ template {
 }
 
 .activities {
-  padding: 36px 0 98px 0;
+  padding: 35px 0 97px 0;
 }
 
 .activities__title {
@@ -1415,26 +1415,27 @@ template {
 .footer {
   background-color: #0A223D;
   color: #FFFFFF;
-  padding-top: 108px;
+  padding-top: 107px;
   padding-bottom: 46px;
 }
 
 .footer-wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(min-content, 1fr))[4];
-      grid-template-columns: repeat(4, minmax(-webkit-min-content, 1fr));
-      grid-template-columns: repeat(4, minmax(min-content, 1fr));
-  grid-gap: 20px;
-  grid-auto-rows: minmax(43px, -webkit-min-content);
-  grid-auto-rows: minmax(43px, min-content);
+  -ms-grid-columns: minmax(min-content, 262px) minmax(min-content, 263px) minmax(min-content, 278px) 193px;
+      grid-template-columns: minmax(-webkit-min-content, 262px) minmax(-webkit-min-content, 263px) minmax(-webkit-min-content, 278px) 193px;
+      grid-template-columns: minmax(min-content, 262px) minmax(min-content, 263px) minmax(min-content, 278px) 193px;
+  grid-gap: 24px 22px;
+  grid-auto-rows: minmax(35px, -webkit-min-content);
+  grid-auto-rows: minmax(35px, min-content);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
 }
 
 .footer__logo {
-  width: 150px;
+  width: 153px;
+  margin-top: 5px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -1476,6 +1477,7 @@ template {
 
 .footer__contact-details {
   grid-column: span 2;
+  margin-top: 11px;
 }
 
 .footer__contact-form {
@@ -1489,12 +1491,12 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1514,6 +1516,10 @@ template {
   margin-bottom: 16px;
 }
 
+.footer__title-categories {
+  margin-bottom: 20px;
+}
+
 .footer__title--inline {
   margin: 0;
   margin-right: 43px;
@@ -1521,6 +1527,10 @@ template {
 
 .footer__title-details {
   margin-bottom: 26px;
+}
+
+.footer__title-form {
+  margin-bottom: 35px;
 }
 
 .footer__item {
@@ -1557,15 +1567,14 @@ template {
 
 .footer__input {
   background-color: #fff;
-  width: 255px;
   height: 50px;
   border-radius: 4px;
   border: none;
   padding-right: 26px;
   padding-left: 26px;
   margin-bottom: 15px;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
 }
 
 .footer__message {
@@ -1600,6 +1609,52 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+}
+
+.footer__locker {
+  padding-top: 100px;
+  position: relative;
+}
+
+.footer__locker-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__locker-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin: 0 6px;
+}
+
+.footer__locker-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__pay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 136px;
+  height: 22px;
+  overflow: hidden;
+}
+
+.footer__pay-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
