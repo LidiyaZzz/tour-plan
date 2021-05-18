@@ -37,28 +37,31 @@
     &-navbar
       max-width: 673px
 
+  .logo
+    &__image
+      width: 132px
+
   .newsletter
     padding: 92px 0 87px 0
     &-wrapper
       max-width: 700px
 
-  .logo
-    width: 132px
-
   .navbar
     &-top
       padding-top: 30px
       padding-bottom: 31px
-    &__search
-      margin-left: 48px
     &-menu
       padding-top: 20px
       padding-bottom: 22px
       &__link
         font-size: 12px
         line-height: 15px
+    &__search
+      margin-right: 75px
+      margin-left: 0
 
   .search
+    justify-content: space-between
     &__input
       width: 340px
 
@@ -101,7 +104,7 @@
     &__title
 
   .activities
-    padding: 45px 0 98px 0
+    padding: 45px 0 50px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -115,11 +118,14 @@
 
   //------------------767-----------
 @media (max-width: 767px)
+
   .packages
     display: none
   .container
     max-width: 576px
     width: 92%
+  .logo
+    width: 132px
   .navbar
     &__search, &-menu, &__user
       display: none
@@ -206,7 +212,8 @@
     max-width: 500px
     width: 92%
   .logo
-    width: 99px
+    &__image
+      width: 99px
 
   .hotel
     &__slider
@@ -232,7 +239,7 @@
 // ---------- 480px-----------
 @media (max-width: 480px)
   .container
-
+    max-width: 400px
     width: 87%
   .navbar
     &-top
@@ -262,13 +269,13 @@
     padding: 29px 21px 26px 22px
 
   .newsletter
-    padding: 76px 0 78px 0
+    padding: 76px 0 82px 0
     &-wrapper
       min-height: 160px
     &-title
       font-size: 20px
       line-height: 25px
-
+      margin-bottom: 20px
       &__strong
         font-size: 30px
         line-height: 48px
@@ -295,8 +302,10 @@
 
   .activities
     padding-top: 28px
-    padding-bottom: 30px
+    padding-bottom: 35px
     &__title
       font-size: 18px
       line-height: 23px
       margin-bottom: 35px
+    &__card
+      margin-bottom: 23px
