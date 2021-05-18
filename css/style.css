@@ -2034,7 +2034,7 @@ template {
   }
   .activities {
     padding-top: 28px;
-    padding-bottom: 35px;
+    padding-bottom: 37px;
   }
   .activities__title {
     font-size: 18px;
@@ -2230,9 +2230,9 @@ template {
 
 @media (max-width: 576px) {
   .footer-wrapper {
-    -ms-grid-columns: minmax(min-content, min-content);
-        grid-template-columns: minmax(-webkit-min-content, -webkit-min-content);
-        grid-template-columns: minmax(min-content, min-content);
+    -ms-grid-columns: minmax(100px, max-content);
+        grid-template-columns: minmax(100px, -webkit-max-content);
+        grid-template-columns: minmax(100px, max-content);
   }
   .footer__logo {
     -ms-grid-row: 1;
@@ -2279,8 +2279,36 @@ template {
 }
 
 @media (max-width: 480px) {
+  .footer {
+    padding-top: 64px;
+  }
   .footer-wrapper {
     grid-gap: 21px 0px;
+  }
+  .footer__title {
+    margin-top: 0px;
+  }
+  .footer__title--inline {
+    margin-top: 19px;
+  }
+  .footer__title--information {
+    margin-top: 5px;
+  }
+  .footer__title--additional {
+    margin-top: 10px;
+  }
+  .footer__title-categories {
+    margin-top: 9px;
+  }
+  .footer__title-details {
+    margin-top: 7px;
+  }
+  .footer__title-form {
+    margin-top: 19px;
+    margin-bottom: 14px;
+  }
+  .footer__text {
+    margin-bottom: 36px;
   }
   .footer__social-network {
     -webkit-box-orient: vertical;
@@ -2316,11 +2344,17 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__contact-form {
-    -ms-grid-row: 7;
-    grid-row: 7;
-    -ms-grid-column: 1;
-    grid-column: 1;
+  .footer__locker-item {
+    margin: 0 2px 35px 2px;
+  }
+  .footer__pay {
+    left: 0;
+  }
+  .footer__pay-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 /*# sourceMappingURL=style.css.map */
