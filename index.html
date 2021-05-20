@@ -54,14 +54,14 @@
   <div class="container container-navbar">
     <ul class="navbar-menu navbar-menu--mobile">
 
-      <li class="navbar-menu__item--form navbar-menu__item--mobile--visible">
+      <li class="navbar-menu__form navbar-menu__form--mobile--visible">
         <a href="#" class="user navbar__user navbar__user--mobile--visible">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
           <span class="user__name user__name--light">Nathan</span>
         </a><!-- /.user -->
       </li>
 
-      <li class="navbar-menu__item--form navbar-menu__item--mobile--visible">
+      <li class="navbar-menu__form navbar-menu__form--mobile--visible">
         <form action="#" class="search navbar__search navbar__search--mobile--visible">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
@@ -99,7 +99,7 @@
 
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
-            <div class="stars stars__wrapper">
+            <div class="stars stars-wrapper">
               <img class="stars__star" src="img/star.svg" alt="star-hotel">
               <img class="stars__star" src="img/star.svg" alt="star-hotel">
               <img class="stars__star" src="img/star.svg" alt="star-hotel">
@@ -220,7 +220,7 @@
 
         <div class="packages__info packages__info-first">
 
-          <div class="packages__info--first-hotel">
+          <div class="packages__info-wrapp">
             <div class="packages__stars">
               <img class="packages__star" src="img/star.svg" alt="star-hotel">
               <img class="packages__star" src="img/star.svg" alt="star-hotel">
@@ -255,8 +255,7 @@
               <strong class="packages__price-sale">$ 8,500</strong>
             </div><!-- /.packages__price-all -->
 
-            <!-- <div class="packages__wrapper--button"></div> -->
-              <button class="packages__price-button">Book Now</button>
+            <button class="packages__price-button">Book Now</button>
             
             
             <div class="offer packages__offer packages__offer-first">Flash Offer</div>
@@ -555,7 +554,7 @@
         <div class="card activities__card">
           <img src="img/activity-1.jpg" alt="The curious corner 
 of chamarel" class="card__img">
-          <h3 class="card__title">The curious corner
+          <h3 class="card__title card__title--one">The curious corner
           of chamarel</h3>
           <button class="card__button">Book Now</button>
         </div><!-- /.card -->
@@ -563,15 +562,15 @@ of chamarel" class="card__img">
         <div class="card activities__card">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf
 course" class="card__img">
-          <h3 class="card__title">Gymkhana club golf
-          course of chamarel</h3>
+          <h3 class="card__title card__title--two">Gymkhana club golf
+          course</h3>
           <button class="card__button">Book Now</button>
         </div><!-- /.card -->
 
         <div class="card activities__card">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking
 trip - full day" class="card__img">
-          <h3 class="card__title">Tamarind falls hiking
+          <h3 class="card__title card__title--three">Tamarind falls hiking
           trip - full day</h3>
           <button class="card__button">Book Now</button>
         </div><!-- /.card -->
@@ -579,7 +578,7 @@ trip - full day" class="card__img">
         <div class="card activities__card">
           <img src="img/activity-4.jpg" alt="The blue marine discovery
 quest" class="card__img">
-          <h3 class="card__title">The blue marine discovery
+          <h3 class="card__title card__title--four">The blue marine discovery
           quest</h3>
           <button class="card__button">Book Now</button>
         </div><!-- /.card -->
@@ -626,9 +625,9 @@ quest" class="card__img">
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link"><img src="img/fb.svg" alt="icon: facebook"></a>
-            <a href="#" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
-            <a href="#" class="footer__link"><img src="img/circleinstagram.svg" alt="icon: circleinstagram"></a>
+            <a href="https://www.facebook.com/" class="footer__link"><img src="img/fb.svg" alt="icon: facebook"></a>
+            <a href="https://www.youtube.com/" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
+            <a href="https://www.instagram.com/" class="footer__link"><img src="img/circleinstagram.svg" alt="icon: circleinstagram"></a>
           </div><!-- footer__social-links -->
         </div><!-- /.footer__social-network -->
 
@@ -659,17 +658,19 @@ quest" class="card__img">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img src="img/phone-call.svg" alt="icon: phone-call" class="footer__icon">
-              </div>              
-              Tel (business hours) : 269 1500 <br>
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br>
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)<br>
+              </div>
+              <div class="footer__num">
+                <div class="footer__num-link"><a href="tel:2691500" class="footer__number">Tel (business hours) : 269 1500</a></div>
+                <div class="footer__num-link"><a href="tel:52566138" class="footer__number">Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</a></div>
+                <div class="footer__num-link"><a href="tel:52566138" class="footer__number">Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a></div>
+              </div><!-- /.footer__num -->
             </li>
 
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
                 <img src="img/email.svg" alt="icon: mail" class="footer__icon">
               </div>
-              cherly.lawson@example.com
+              <div class="footer__letters"><a href="mailto:cherly.lawson@example.com" class="footer__letter">cherly.lawson@example.com</a></div> 
           </li>
           </ul><!-- /.footer__ul -->
         </div>
@@ -679,14 +680,14 @@ quest" class="card__img">
           <h3 class="footer__title footer__title-form">Send us a message</h3>
 
           <form action="#" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*"></input>
-            <input type="text" class="input footer__input" placeholder="Phone Number*"></input>   
+            <input type="text" class="input footer__input" placeholder="Your Full Name*">
+            <input type="text" class="input footer__input" placeholder="Phone Number*">   
             
             <textarea class="footer__message" cols="30" rows="10" placeholder="Message"></textarea>
 
             <button class="button footer__button" type="submit">Send</button>
 
-            <span class="footer__info">* Required Fields</span>
+            <div class="footer__info-wrepper"><span class="footer__info">* Required Fields</span></div>
             
           </form><!-- /.footer__form -->
         </div><!-- /.footer contact-form -->

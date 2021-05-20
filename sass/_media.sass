@@ -119,8 +119,6 @@
   .card
     width: 339px
     min-height: 255px
-    &__title
-      max-width: 155px
 
   //------------------767-----------
 @media (max-width: 767px)
@@ -244,8 +242,6 @@
     &__title
       font-size: 24px
       line-height: 30px
-    &-slider__text
-      overflow: inherit
 
 // ---------- 480px-----------
 @media (max-width: 480px)
@@ -273,7 +269,7 @@
     &-price
       min-height: 400px
 
-  .stars__wrapper
+  .stars-wrapper
     margin-right: 14px
 
   .booking
@@ -320,3 +316,13 @@
       margin-bottom: 35px
     &__card
       margin-bottom: 23px
+  .card
+    &__title
+      &--one
+        width: 70%
+      &--two
+        width: 80%
+      &--three
+        width: 80%
+      &--four
+        width: 90%

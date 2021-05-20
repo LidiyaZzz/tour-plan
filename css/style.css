@@ -414,7 +414,7 @@ template {
   padding: 0;
 }
 
-.navbar-menu__item--mobile--visible {
+.navbar-menu__form--mobile--visible {
   display: none;
 }
 
@@ -874,6 +874,7 @@ template {
   overflow: hidden;
   position: relative;
   background-color: #007ADF;
+  max-height: 500px;
 }
 
 .packages__card-first {
@@ -893,6 +894,7 @@ template {
   border-radius: 8px;
   overflow: hidden;
   position: relative;
+  max-height: 500px;
 }
 
 .packages__images-first {
@@ -976,6 +978,8 @@ template {
   font-size: 14px;
   line-height: 160.6%;
   color: #FFFFFF;
+  max-height: 166px;
+  overflow: auto;
 }
 
 .packages__room {
@@ -1079,15 +1083,15 @@ template {
 
 .packages__offer-first {
   max-width: 95px;
-  min-height: 30px;
+  min-height: 32px;
   font-size: 12px;
   line-height: 15px;
   padding: 8px 12px 7px 11px;
 }
 
 .packages__offer-successive {
-  max-width: 60px;
-  min-height: 18px;
+  min-width: 60px;
+  max-height: 19px;
   font-size: 8px;
   line-height: 10px;
   padding: 4px 9px;
@@ -1170,6 +1174,38 @@ template {
   line-height: 18px;
 }
 
+.subscripe__input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+}
+
+.subscripe__input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+}
+
+.subscripe__input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+}
+
+.subscripe__input::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #BDBDBD;
+}
+
 .subscripe__button {
   position: absolute;
   right: 0;
@@ -1179,6 +1215,10 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .parallax-window {
@@ -1411,6 +1451,22 @@ template {
   line-height: 20px;
 }
 
+.card__title--one {
+  width: 145px;
+}
+
+.card__title--two {
+  width: 153px;
+}
+
+.card__title--three {
+  width: 161px;
+}
+
+.card__title--four {
+  width: 200px;
+}
+
 .card__button {
   font-style: normal;
   font-weight: 600;
@@ -1589,6 +1645,38 @@ template {
       flex-basis: 47%;
 }
 
+.footer__input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.footer__input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.footer__input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.footer__input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
 .footer__message {
   background-color: #fff;
   border-radius: 4px;
@@ -1599,6 +1687,38 @@ template {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
+}
+
+.footer__message::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.footer__message:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.footer__message::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.footer__message::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .footer__button {
@@ -1667,6 +1787,15 @@ template {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.footer__number, .footer__letter {
+  color: inherit;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
 }
 
 @media (max-width: 1200px) {
@@ -1805,9 +1934,6 @@ template {
   .card {
     width: 339px;
     min-height: 255px;
-  }
-  .card__title {
-    max-width: 155px;
   }
 }
 
@@ -1974,9 +2100,6 @@ template {
     font-size: 24px;
     line-height: 30px;
   }
-  .reviews-slider__text {
-    overflow: inherit;
-  }
 }
 
 @media (max-width: 480px) {
@@ -2007,7 +2130,7 @@ template {
   .hotel-price {
     min-height: 400px;
   }
-  .stars__wrapper {
+  .stars-wrapper {
     margin-right: 14px;
   }
   .booking {
@@ -2060,6 +2183,18 @@ template {
   }
   .activities__card {
     margin-bottom: 23px;
+  }
+  .card__title--one {
+    width: 70%;
+  }
+  .card__title--two {
+    width: 80%;
+  }
+  .card__title--three {
+    width: 80%;
+  }
+  .card__title--four {
+    width: 90%;
   }
 }
 
@@ -2234,8 +2369,8 @@ template {
 
 @media (max-width: 767px) {
   .footer-wrapper {
-    -ms-grid-columns: 22vw 38vw 30vw;
-        grid-template-columns: 22vw 38vw 30vw;
+    -ms-grid-columns: 30% 40% 30%;
+        grid-template-columns: 30% 40% 30%;
   }
   .footer__input {
     -ms-flex-preferred-size: 100%;
@@ -2304,6 +2439,31 @@ template {
   }
   .footer__item {
     font-size: 14px;
+  }
+  .footer__input, .footer__message {
+    -webkit-box-ordinal-group: -2;
+        -ms-flex-order: -3;
+            order: -3;
+    margin-bottom: 15px;
+  }
+  .footer__info {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .footer__info-wrepper {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .footer__locker {
+    padding-top: 30px;
   }
 }
 
@@ -2404,7 +2564,7 @@ template {
     left: 0;
     right: 0;
     bottom: 0;
-    top: 76px;
+    top: 74px;
   }
   .navbar-menu {
     -webkit-box-orient: vertical;
@@ -2416,19 +2576,20 @@ template {
   .navbar-menu__item {
     margin-bottom: 17px;
   }
-  .navbar-menu__item--form {
-    margin-bottom: 23px;
-  }
   .navbar-menu__item--indent {
     margin-top: 16px;
   }
-  .navbar-menu__item--mobile--visible {
+  .navbar-menu__form {
+    margin-bottom: 23px;
+  }
+  .navbar-menu__form--mobile--visible {
     display: block;
     margin-top: 0px;
   }
   .navbar-menu--mobile {
     height: 90vh;
     overflow: auto;
+    padding-bottom: 100px;
   }
   .navbar__search--mobile--hidden, .navbar__user--mobile--hidden {
     display: none;
