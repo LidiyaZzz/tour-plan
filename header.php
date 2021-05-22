@@ -1,5 +1,8 @@
+<!-- <?php include('header.php') ?> -->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +13,13 @@
   <link rel="icon" href="/Homework/tour-plan/favicon.ico" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 
-  
+
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 
-  
+
 </head>
 
 <body>
@@ -27,7 +29,7 @@
 
       <div class="navbar-top">
         <a href="https://lidiya-style.ru/Homework/tour-plan" class="logo">
-          <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image">          
+          <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
         </a><!-- /.logo -->
 
         <form action="#" class="search navbar__search navbar__search--mobile--hidden">
@@ -69,7 +71,7 @@
               </button>
             </form><!-- /.search -->
           </li>
-        
+
           <li class="navbar-menu__item navbar-menu__item--indent"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
           <li class="navbar-menu__item"><a href="activities.php" class="navbar-menu__link">Activities</a></li>
@@ -78,7 +80,7 @@
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
         </ul><!-- /.navbar-menu -->
-      </div><!-- /.container -->  
+      </div><!-- /.container -->
     </div>
 
   </header>

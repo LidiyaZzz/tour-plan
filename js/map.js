@@ -13,5 +13,7 @@ var myMap,
             ballonContent: 'Hotel',
         });
             
-        myMap.geoObjects.add (myPlacemark);    
+        myMap.geoObjects.add (myPlacemark);  
+        
+        myMap.behaviors.disable('scrollZoom');
         }
