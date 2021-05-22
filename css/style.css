@@ -846,6 +846,7 @@ template {
 .booking__button {
   width: 100%;
   min-height: 45px;
+  padding: 13px;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
@@ -1109,19 +1110,18 @@ template {
   border-radius: 0px 4px 4px 0px;
   font-style: normal;
   font-weight: 600;
+  color: #FFFFFF;
 }
 
 .packages__offer-first {
-  width: 100%;
-  min-height: 32px;
+  min-width: 95px;
   font-size: 12px;
   line-height: 15px;
-  padding: 8px 12px 7px 11px;
+  padding: 8px 11px;
 }
 
 .packages__offer-successive {
-  width: 65px;
-  min-height: 19px;
+  min-width: 60px;
   font-size: 8px;
   line-height: 10px;
   padding: 4px 9px;
@@ -1859,10 +1859,74 @@ template {
   margin-bottom: 15px;
 }
 
+.modal__input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
 .modal__message {
   width: 100%;
   min-height: 123px;
   margin-bottom: 15px;
+}
+
+.modal__message::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__message:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__message::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.modal__message::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
 }
 
 .modal__button {
@@ -2666,10 +2730,10 @@ template {
     margin-bottom: 17px;
   }
   .navbar-menu__item--indent {
-    margin-top: 16px;
+    margin-top: 10px;
   }
   .navbar-menu__form {
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
   .navbar-menu__form--mobile--visible {
     display: block;

@@ -39,10 +39,14 @@
   &__input
     width: 100%
     margin-bottom: 15px
+    &::placeholder
+      @include placeholder
   &__message
     width: 100%
     min-height: 123px
     margin-bottom: 15px
+    &::placeholder
+      @include placeholder
   &__button
     margin-bottom: 15px
   &__info
@@ -51,6 +55,11 @@
     font-size: 12px
     line-height: 15px
     color: $footer
+    margin-left: auto
+    &-wrapper
+      border: 3px solid #ec1b1b
+      display: flex
+      justify-content: space-between
   &__title
     font-style: normal
     font-weight: bold

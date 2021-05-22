@@ -39,7 +39,7 @@
 
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
-          <span class="user__name"><?php echo 'Nathan' ?></span>
+          <span class="user__name">Nathan</span>
         </a><!-- /.user -->
 
         <button class="menu-button navbar-top__menu-button">
@@ -257,7 +257,7 @@
 
               <button class="packages__price-button">Book Now</button>
 
-              <div class="offer packages__offer packages__offer-first">Flash Offer</div>
+              <div class="packages__offer packages__offer-first">Flash Offer</div>
 
             </div><!-- /.packages-price -->
 
@@ -295,7 +295,7 @@
 
               <button class="packages__price-button">Book Now</button>
 
-              <div class="offer packages__offer packages__offer-successive">Flash Offer</div>
+              <div class="packages__offer packages__offer-successive">Flash Offer</div>
 
             </div><!-- /.packages-hotel__price -->
 
@@ -333,7 +333,7 @@
 
               <button class="packages__price-button">Book Now</button>
 
-              <div class="offer packages__offer packages__offer-successive">Flash Offer</div>
+              <div class="packages__offer packages__offer-successive">Flash Offer</div>
 
             </div><!-- /.packages-hotel__price -->
 
@@ -371,7 +371,7 @@
 
               <button class="packages__price-button">Book Now</button>
 
-              <div class="offer packages__offer packages__offer-successive">Flash Offer</div>
+              <div class="packages__offer packages__offer-successive">Flash Offer</div>
 
             </div><!-- /.packages-hotel__price -->
 
@@ -409,7 +409,7 @@
 
               <button class="packages__price-button">Book Now</button>
 
-              <div class="offer packages__offer packages__offer-successive">Flash Offer</div>
+              <div class="packages__offer packages__offer-successive">Flash Offer</div>
 
             </div><!-- /.packages-hotel__price -->
 
@@ -715,7 +715,7 @@
         <img src="img/close.svg" alt="icon: close">
       </a>
 
-      <h3 class="modal__title modal__title-form">Send us a message</h3>
+      <h3 class="modal__title modal__title-form">Booking</h3>
       <form action="send.php" method="POST" class="modal__form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
         <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
@@ -723,10 +723,11 @@
       
         <textarea class="messege modal__message" placeholder="Message" name="message"></textarea>
       
-        <button class="button modal__button" type="submit">Send</button>
-      
-        <div class="modal__info-wrepper"><span class="modal__info">* Required Fields</span></div>
-      
+        <div class="modal__info-wrapper">
+          <button class="button modal__button" type="submit">Send</button> 
+          <span class="modal__info">* Required Fields</span>
+        </div><!-- /.modal__info-wrepper -->
+        
       </form><!-- /.modal__form -->
     </div><!-- /.modal__dialog -->
 
