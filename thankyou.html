@@ -1,3 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best Tour Plan - Hotel Booking</title>
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/Homework/tour-plan/favicon.ico" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+    rel="stylesheet">
+
+
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+  <header class="navbar navbar--mobile--fixed">
+
+    <div class="container">
+
+      <div class="navbar-top">
+        <a href="https://lidiya-style.ru/Homework/tour-plan" class="logo">
+          <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
+        </a><!-- /.logo -->
+
+        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+          <input type="text" class="search__input" placeholder="Search Location">
+          <button class="search__button">
+            <img src="img/search.svg" alt="Icon: search">
+          </button>
+        </form><!-- /.search -->
+
+        <a href="#" class="user navbar__user navbar__user--mobile--hidden">
+          <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
+          <span class="user__name">
+            <?php echo 'Nathan' ?>
+          </span>
+        </a><!-- /.user -->
+
+        <button class="menu-button navbar-top__menu-button">
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+          <span class="menu-button__line"></span>
+        </button>
+      </div><!-- /.navbar-top -->
+    </div><!-- /.container -->
+
+    <div class="navbar-bottom">
+      <div class="container container-navbar">
+        <ul class="navbar-menu navbar-menu--mobile">
+
+          <li class="navbar-menu__form navbar-menu__form--mobile--visible">
+            <a href="#" class="user navbar__user navbar__user--mobile--visible">
+              <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
+              <span class="user__name user__name--light">Nathan</span>
+            </a><!-- /.user -->
+          </li>
+
+          <li class="navbar-menu__form navbar-menu__form--mobile--visible">
+            <form action="#" class="search navbar__search navbar__search--mobile--visible">
+              <input type="text" class="search__input" placeholder="Search Location">
+              <button class="search__button">
+                <img src="img/search.svg" alt="Icon: search">
+              </button>
+            </form><!-- /.search -->
+          </li>
+
+          <li class="navbar-menu__item navbar-menu__item--indent"><a href="#" class="navbar-menu__link">All Deals</a>
+          </li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
+          <li class="navbar-menu__item"><a href="activities.php" class="navbar-menu__link">Activities</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
+          <li class="navbar-menu__item"><a href="restaurants.php" class="navbar-menu__link">Restaurants</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
+        </ul><!-- /.navbar-menu -->
+      </div><!-- /.container -->
+    </div>
+
+  </header>
+
+  <nav class="breadcrumb">
+    <div class="container">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Home</a></li>
+        <li class="breadcrumb-list__item"><a href="#" class="breadcrumb-list__link">Flash Offers</a></li>
+        <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
+      </ul>
+    </div><!-- /.container -->
+  </nav><!-- /.breadcrumb -->
+
+  <section class="hotel">
+    <div class="container">
+      <div class="hotel-info">
+
+        <div class="hotel-info__text">
+          <div class="hotel-wrapper">
+            <div class="stars stars-wrapper">
+              <img class="stars__star" src="img/star.svg" alt="star-hotel">
+              <img class="stars__star" src="img/star.svg" alt="star-hotel">
+              <img class="stars__star" src="img/star.svg" alt="star-hotel">
+              <img class="stars__star" src="img/star.svg" alt="star-hotel">
+              <img class="stars__star" src="img/star.svg" alt="star-hotel">
+            </div><!-- /.stars -->
+            <h1 class="hotel-name hotel-info__name">Message sent</h1>
+            
+          </div><!-- /.hotel-wrapper -->
+        
+          <p class="hotel-description hotel-info__description">Wait for a response</p>
+        </div><!-- /.hotel info__text -->
+        
+    </div><!-- /.container -->
+  </section><!-- /.hotei -->
+
 <footer class="footer">
   <div class="container">
     <div class="footer-wrapper">
@@ -37,7 +159,8 @@
         <div class="footer__social-links">
           <a href="https://www.facebook.com/" class="footer__link"><img src="img/fb.svg" alt="icon: facebook"></a>
           <a href="https://www.youtube.com/" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
-          <a href="https://www.instagram.com/" class="footer__link"><img src="img/circleinstagram.svg" alt="icon: circleinstagram"></a>
+          <a href="https://www.instagram.com/" class="footer__link"><img src="img/circleinstagram.svg"
+              alt="icon: circleinstagram"></a>
         </div><!-- footer__social-links -->
       </div><!-- /.footer__social-network -->
 
@@ -70,9 +193,12 @@
               <img src="img/phone-call.svg" alt="icon: phone-call" class="footer__icon">
             </div>
             <div class="footer__num">
-              <div class="footer__num-link"><a href="tel:2691500" class="footer__number">Tel (business hours) : 269 1500</a></div>
-              <div class="footer__num-link"><a href="tel:52566138" class="footer__number">Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</a></div>
-              <div class="footer__num-link"><a href="tel:52566138" class="footer__number">Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a></div>
+              <div class="footer__num-link"><a href="tel:2691500" class="footer__number">Tel (business hours) : 269
+                  1500</a></div>
+              <div class="footer__num-link"><a href="tel:52566138" class="footer__number">Tel (hotline) Monday -
+                  Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</a></div>
+              <div class="footer__num-link"><a href="tel:52566138" class="footer__number">Tel (hotline) Sunday:
+                  52-56-61-38 (08:00 am – 14:00 pm)</a></div>
             </div><!-- /.footer__num -->
           </li>
 
@@ -80,7 +206,8 @@
             <div class="footer__icon-wrapper">
               <img src="img/email.svg" alt="icon: mail" class="footer__icon">
             </div>
-            <div class="footer__letters"><a href="mailto:cherly.lawson@example.com" class="footer__letter">cherly.lawson@example.com</a></div>
+            <div class="footer__letters"><a href="mailto:cherly.lawson@example.com"
+                class="footer__letter">cherly.lawson@example.com</a></div>
           </li>
         </ul><!-- /.footer__ul -->
       </div>
@@ -112,7 +239,8 @@
       </ul>
 
       <div class="footer__pay">
-        <a href="#" class="footer__pay-link"><img src="img/footer-pay.png" alt="picture: pay link" class="footer__pay-img"></a>
+        <a href="#" class="footer__pay-link"><img src="img/footer-pay.png" alt="picture: pay link"
+            class="footer__pay-img"></a>
       </div><!-- /.footer__pay -->
       <!-- /.footer__locker-list -->
 

@@ -24,11 +24,13 @@ $body = "
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 try {
-    $mail->isSMTP();   
+    $mail->isSMTP();
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth = true;
     //$mail->SMTPDebug = 2;
-    $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
+    $mail->Debugoutput = function ($str, $level) {
+        $GLOBALS['status'][] = $str;
+    };
 
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
@@ -39,18 +41,20 @@ try {
     $mail->setFrom('lidiya_tour-plan@mail.ru', 'Best Tour-plan'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('lidiya_tour-plan_return@mail.ru');      
+    $mail->addAddress('lidiya_tour-plan_return@mail.ru');
 
-    
-// Отправка сообщения
-$mail->isHTML(true);
-$mail->Subject = $title;
-$mail->Body = $body;    
 
-// Проверяем отравленность сообщения
-if ($mail->send()) {$result = "success";} 
-else {$result = "error";}
+    // Отправка сообщения
+    $mail->isHTML(true);
+    $mail->Subject = $title;
+    $mail->Body = $body;
 
+    // Проверяем отравленность сообщения
+    if ($mail->send()) {
+        $result = "success";
+    } else {
+        $result = "error";
+    }
 } catch (Exception $e) {
     $result = "error";
     $status = "Сообщение не было отправлено. Причина ошибки: {$mail->ErrorInfo}";
@@ -58,4 +62,4 @@ else {$result = "error";}
 
 // Отображение результата
 //echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
-header('location: thankyou.php');
+header('location: thankyou.html');

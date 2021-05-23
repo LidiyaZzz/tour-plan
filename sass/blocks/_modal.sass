@@ -1,3 +1,4 @@
+
 .modal
   &__overlay
     position: fixed
@@ -17,8 +18,9 @@
     position: fixed
     top: 50%
     left: 50%
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -57%)
     max-width: 478px
+    max-height: 487px
     padding: 33px 88px
     background-color: $dark
     color: $light
@@ -44,11 +46,11 @@
   &__message
     width: 100%
     min-height: 123px
-    margin-bottom: 15px
+    margin-bottom: 10px
     &::placeholder
       @include placeholder
   &__button
-    margin-bottom: 15px
+
   &__info
     font-style: normal
     font-weight: bold
@@ -57,9 +59,9 @@
     color: $footer
     margin-left: auto
     &-wrapper
-      border: 3px solid #ec1b1b
       display: flex
       justify-content: space-between
+      align-items: center
   &__title
     font-style: normal
     font-weight: bold
