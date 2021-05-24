@@ -85,8 +85,6 @@ menuButton.addEventListener('click', function () {
     event.stopPropagation();
   });
 
-
-
   document.onkeydown = function(evt) {
       evt = evt || window.event;
       var isEscape = false;
@@ -98,6 +96,7 @@ menuButton.addEventListener('click', function () {
       if (isEscape) {
           $(".modal__overlay").removeClass("modal__overlay--visible");
           $(".modal__dialog").removeClass("modal__dialog--visible");
+          $("body").removeClass("body__no-scroll");
       }
   };
     
