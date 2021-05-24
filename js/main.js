@@ -1,20 +1,19 @@
 $(document).ready(function () {
+  //Слайдер 1
+
   var hotelSlider = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
-
   // Navigation arrows
   navigation: {
     nextEl: '.hotel-slider__button--next',
     prevEl: '.hotel-slider__button--prev',
   },
-
   //effect: "cube",
   // тащим слайды мышкой
   simulateTouch: true,
   // хватаем слайды 'лапкой'
   grabCursor: true,
-
   // Управление с клавиатуры
   keyboard: {
     enabled: true,
@@ -23,20 +22,18 @@ $(document).ready(function () {
   },
 });
 
+//Слайдер 2
 var reviewsSlider = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
-
   // Navigation arrows
   navigation: {
     nextEl: '.reviews-slider__button--next',
     prevEl: '.reviews-slider__button--prev',
   },
-
   //effect: "cube",  
   simulateTouch: true,
   grabCursor: true,
-
   // Управление с клавиатуры
   keyboard: {
     enabled: true,
@@ -45,12 +42,13 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   },
 });
 
-
+//мобильное меню
 var menuButton = document.querySelector('.menu-button');
 menuButton.addEventListener('click', function () {  
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
 });
 
+//модальное окно
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
   modalButton.on("click", openModal);
@@ -97,7 +95,27 @@ menuButton.addEventListener('click', function () {
           $(".modal__overlay").removeClass("modal__overlay--visible");
           $(".modal__dialog").removeClass("modal__dialog--visible");
           $("body").removeClass("body__no-scroll");
-      }
+      } 
   };
+
+  // Обработка формы отправки
+    $(".form").each(function() {
+      $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Please write at least 2 characters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "Please write your phone number",
+        },
+      }
+    });
+    });
     
 });

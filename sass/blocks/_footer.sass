@@ -79,25 +79,20 @@
     text-decoration: none
     color: inherit
   &__input
-    margin-bottom: 15px
-    flex-basis: 47%
+    width: 100%
     &::placeholder
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
-      color: $footer
+      @include placeholder
+    &-group
+      min-width: 255px
+      margin-bottom: 15px
+      flex-basis: 47%
   &__message
     width: 539px
     min-height: 123px
     flex-basis: 100%
     margin-bottom: 23px
     &::placeholder
-      font-style: normal
-      font-weight: normal
-      font-size: 12px
-      line-height: 15px
-      color: $footer
+      @include placeholder
 
   &__info
     font-style: normal

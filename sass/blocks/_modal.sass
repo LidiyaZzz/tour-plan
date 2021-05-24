@@ -18,9 +18,9 @@
     position: fixed
     top: 50%
     left: 50%
-    transform: translate(-50%, -57%)
+    transform: translate(-50%, -52%)
     max-width: 478px
-    max-height: 487px
+    min-height: 487px
     padding: 33px 88px
     background-color: $dark
     color: $light
@@ -40,17 +40,16 @@
     cursor: pointer
   &__input
     width: 100%
-    margin-bottom: 15px
+    margin-top: 15px
     &::placeholder
       @include placeholder
   &__message
     width: 100%
     min-height: 123px
+    margin-top: 15px
     margin-bottom: 10px
     &::placeholder
       @include placeholder
-  &__button
-
   &__info
     font-style: normal
     font-weight: bold
@@ -68,5 +67,4 @@
     font-size: 18px
     line-height: 23px
     text-transform: uppercase
-    margin-bottom: 15px
     text-align: center
