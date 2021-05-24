@@ -43,9 +43,9 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 });
 
 //мобильное меню
-var menuButton = document.querySelector('.menu-button');
-menuButton.addEventListener('click', function () {  
-  document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+var menuButton = $('.menu-button');
+menuButton.on('click', function () {  
+  $('.navbar-bottom').toggleClass('navbar-bottom--visible');
 });
 
 //модальное окно
@@ -55,10 +55,9 @@ menuButton.addEventListener('click', function () {
   closeModalButton.on("click", closeModal);   
 
   function openModal() {
-    var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.addClass("modal__overlay--visible");
-    modalDialog.addClass("modal__dialog--visible");
+    var targetModal = $(this).attr("data-href");    
+    $(targetModal).find(".modal__overlay").addClass("modal__overlay--visible");
+    $(targetModal).find(".modal__dialog").addClass("modal__dialog--visible");
     $("body").addClass("body__no-scroll");
   };
   
