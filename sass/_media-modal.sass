@@ -1,17 +1,19 @@
-//------------992-----------
-@media (max-width: 992px)
-  .modal
-    &__dialog
-      padding: 20px 40px
 
 //------------------767-----------
 @media (max-width: 767px)
   .modal
     &__dialog
-      transform: translate(-50%, -50%)
-      padding: 20px 20px
-      max-height: 100vh
-      overflow: scroll
+      top: 20px
+      transform: translate(-50%, 0%)
+      width: 70vw
+      height: 90vh
+      &-wrapper
+        padding: 20px 20px
+        height: 90vh
+    &__input
+      width: 100%
+    &__message
+      width: 100%
     &__info
       margin-left: 0
       margin-top: 5px
@@ -19,3 +21,9 @@
         flex-direction: column
         justify-content: start
         align-items: start
+
+//--------------------576------------
+@media (max-width: 576px)
+  .modal
+    &__dialog
+      width: 80vw

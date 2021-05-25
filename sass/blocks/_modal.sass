@@ -19,9 +19,8 @@
     top: 50%
     left: 50%
     transform: translate(-50%, -52%)
-    max-width: 478px
+    width: 478px
     min-height: 487px
-    padding: 33px 88px
     background-color: $dark
     color: $light
     border-radius: 8px
@@ -29,6 +28,11 @@
     visibility: hidden
     opacity: 0
     transition: opacity 0.3s
+    &-wrapper
+      padding: 33px 88px
+      width: 100%
+      height: 100%
+      overflow: auto
     &--visible
       visibility: visible
       opacity: 1
@@ -39,13 +43,15 @@
     text-decoration: none
     cursor: pointer
   &__input
-    width: 100%
+    @include input
+    width: 302px
     margin-top: 15px
     &::placeholder
       @include placeholder
   &__message
-    width: 100%
-    min-height: 123px
+    @include messege
+    width: 302px
+    height: 123px
     margin-top: 15px
     margin-bottom: 10px
     &::placeholder
