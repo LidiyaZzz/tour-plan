@@ -98,9 +98,10 @@ menuButton.on('click', function () {
   };
 
   // Обработка формы отправки
+    
     $(".form").each(function() {
       $(this).validate({
-      errorClass: "invalid",
+      errorClass: "invalid",      
       messages: {
         name: {
           required: "Please specify your name",
@@ -116,5 +117,18 @@ menuButton.on('click', function () {
       }
     });
     });
+
+    $(".newsletter__subscripen").validate({
+      errorClass: "error",
+      messages: {        
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },        
+      }    
+    });
+
+// анимация
+AOS.init();
     
 });

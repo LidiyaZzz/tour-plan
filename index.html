@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="/Homework/tour-plan/favicon.ico" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,16 +15,15 @@
 
 
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
 <body>
-  <header class="navbar navbar--mobile--fixed">
-    <img src="img/qoute-left.svg" alt="">
+  <header class="navbar navbar--mobile--fixed">    
     
-
     <div class="container">
 
       <div class="navbar-top">
@@ -157,7 +156,7 @@
 
         <div class="hotel-price">
 
-          <div class="booking">
+          <div class="booking" data-aos="flip-up" data-aos-delay="500">
 
             <div class="booking__info">
               <div class="booking__price">
@@ -214,7 +213,7 @@
       <div class="packages-grid">
 
         <!-- card-first -->
-        <div class="packages__card packages__card-first">
+        <div class="packages__card packages__card-first" data-aos="zoom-in-up" data-aos-delay="300">
 
           <div class="packages__images-first">
             <img src="img/packages-hotel-1.jpg" alt="foto: Hotel Blue Haven" class="packages__image packages__image--first">
@@ -269,7 +268,7 @@
         </div><!-- /.packages__card-first -->
 
         <!-- card-2 -->
-        <div class="packages__cards packages__cards-successive">
+        <div class="packages__cards packages__cards-successive" data-aos="zoom-in-up" data-aos-delay="600">
 
           <div class="packages__images-successive">
             <img src="img/packages-hotel-2.jpg" alt="foto: Hotel Blue Haven" class="packages__image">
@@ -311,7 +310,7 @@
         </div><!-- /.packages__cards packages__cards-successive -->
 
         <!-- card-3 -->
-        <div class="packages__cards packages__cards-successive">
+        <div class="packages__cards packages__cards-successive" data-aos="zoom-in-up" data-aos-delay="300">
 
           <div class="packages__images-successive">
             <img src="img/packages-hotel-3.jpg" alt="foto: Hotel Blue Haven" class="packages__image">
@@ -353,7 +352,7 @@
         </div><!-- /.packages__cards packages__cards-successive -->
 
         <!-- card-4 -->
-        <div class="packages__cards packages__cards-successive">
+        <div class="packages__cards packages__cards-successive" data-aos="zoom-in-up" data-aos-delay="600">
 
           <div class="packages__images-successive">
             <img src="img/packages-hotel-4.jpg" alt="foto: Hotel Blue Haven" class="packages__image">
@@ -395,7 +394,7 @@
         </div><!-- /.packages__cards packages__cards-successive -->
 
         <!-- card-5 -->
-        <div class="packages__cards packages__cards-successive packages__card-last">
+        <div class="packages__cards packages__cards-successive packages__card-last" data-aos="zoom-in-up" data-aos-delay="900">
 
           <div class="packages__images-successive">
             <img src="img/packages-hotel-5.jpg" alt="foto: Hotel Blue Haven" class="packages__image">
@@ -453,8 +452,8 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
 
-      <form action="send.php" method="POST" class="subscripe newsletter__subscripen form">
-        <div class="ertwer"><input type="email" class="subscripe__input" placeholder="Your email address" name="email" required></div>
+      <form action="send.php" method="POST" class="subscripe newsletter__subscripen">
+        <input type="email" class="subscripe__input" placeholder="Your email address" name="email" required>
         <button class="subscripe__button">Send</button>
       </form><!-- /.subscripe -->
 
@@ -506,7 +505,7 @@
                 <span class="reviews-slider__date">Stayed 30 January, 2020</span>
 
                 <div class="reviews-slider__rating">
-                  <img class="reviews-star" src="img/star.svg" alt="star-hotel">
+                  <img class="reviews-star" src="img/star.svg" alt="star-hotel"> 
                   <img class="reviews-star" src="img/star.svg" alt="star-hotel">
                   <img class="reviews-star" src="img/star.svg" alt="star-hotel">
                   <img class="reviews-star" src="img/star.svg" alt="star-hotel">
@@ -570,25 +569,25 @@
 
       <div class="activities-wrapper">
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in-up" data-aos-delay="300">
           <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__img">
           <h3 class="card__title card__title--one">The curious corner of chamarel</h3>
           <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
         </div><!-- /.card -->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in-up" data-aos-delay="600">
           <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__img">
           <h3 class="card__title card__title--two">Gymkhana club golf course</h3>
           <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
         </div><!-- /.card -->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in-up" data-aos-delay="900">
           <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__img">
           <h3 class="card__title card__title--three">Tamarind falls hiking trip - full day</h3>
           <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
         </div><!-- /.card -->
 
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="zoom-in-up" data-aos-delay="1200">
           <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__img">
           <h3 class="card__title card__title--four">The blue marine discovery quest</h3>
           <button data-toggle="modal" data-href="#booking-modal" class="card__button">Book Now</button>
@@ -806,6 +805,7 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=e75c9725-ce8c-4892-beaa-3a460827a6ae&lang=ru_RU"></script>
   <script src="js/map.js"></script> 
   <script src="js/jquery.validate.min.js"></script>
+  <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
   <script src="js/parallax.min.js"></script>
 </body>
