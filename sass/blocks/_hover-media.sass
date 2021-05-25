@@ -5,14 +5,10 @@
         @include hover-dark
     &-menu__item
       &:hover
-        @include hover-blue
+        @include hover-link
   .user__name
     &:hover
-      @include hover-dark
-  .logo
-    &__image
-      &:hover
-        @include hover-dark
+      @include hover-link
 
   // hotel
   .hotel-info__rating
@@ -20,7 +16,7 @@
       @include hover-dark
   .booking__number
     &:hover
-      @include hover-blue
+      @include hover-link
   .booking__button
     &:hover
       @include hover-blue
@@ -41,9 +37,14 @@
       @include hover-blue
 
   //footer
-  .footer__number
-    &:hover
-      @include hover-footer
-  .footer__letter
-    &:hover
-      @include hover-footer
+  .footer
+    &__number,
+    &__letter
+      &:hover
+        @include hover-link
+  .footer
+    &__input,
+    &__message,
+    &__button
+      &:hover
+        @include hover-blue

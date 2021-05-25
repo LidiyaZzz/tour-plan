@@ -2030,22 +2030,10 @@ template {
             box-shadow: 1px 1px 10px 2px #0A223D;
   }
   .navbar-menu__item:hover {
-    border: 0;
-    border-radius: 6px;
-    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
-            box-shadow: 1px 1px 10px 2px #9ecdf3;
+    text-shadow: 0px 0px 10px #9ecdf3;
   }
   .user__name:hover {
-    border: 0;
-    border-radius: 6px;
-    -webkit-box-shadow: 1px 1px 10px 2px #0A223D;
-            box-shadow: 1px 1px 10px 2px #0A223D;
-  }
-  .logo__image:hover {
-    border: 0;
-    border-radius: 6px;
-    -webkit-box-shadow: 1px 1px 10px 2px #0A223D;
-            box-shadow: 1px 1px 10px 2px #0A223D;
+    text-shadow: 0px 0px 10px #9ecdf3;
   }
   .hotel-info__rating:hover {
     border: 0;
@@ -2054,10 +2042,7 @@ template {
             box-shadow: 1px 1px 10px 2px #0A223D;
   }
   .booking__number:hover {
-    border: 0;
-    border-radius: 6px;
-    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
-            box-shadow: 1px 1px 10px 2px #9ecdf3;
+    text-shadow: 0px 0px 10px #9ecdf3;
   }
   .booking__button:hover {
     border: 0;
@@ -2083,19 +2068,14 @@ template {
     -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
             box-shadow: 1px 1px 10px 2px #9ecdf3;
   }
-  .footer__number:hover {
-    border: 0;
-    border-radius: 6px;
-    background-color: #0f3b6d;
-    -webkit-box-shadow: 1px 1px 7px 5px #0f3b6d;
-            box-shadow: 1px 1px 7px 5px #0f3b6d;
+  .footer__number:hover, .footer__letter:hover {
+    text-shadow: 0px 0px 10px #9ecdf3;
   }
-  .footer__letter:hover {
+  .footer__input:hover, .footer__message:hover, .footer__button:hover {
     border: 0;
     border-radius: 6px;
-    background-color: #0f3b6d;
-    -webkit-box-shadow: 1px 1px 7px 5px #0f3b6d;
-            box-shadow: 1px 1px 7px 5px #0f3b6d;
+    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+            box-shadow: 1px 1px 10px 2px #9ecdf3;
   }
 }
 
