@@ -22,6 +22,7 @@ body {
 
 a, button {
   cursor: pointer;
+  outline: none;
 }
 
 .button {
@@ -36,7 +37,6 @@ a, button {
   background-color: #EC1F46;
   border-radius: 4px;
   border: none;
-  cursor: pointer;
 }
 
 .invalid {
@@ -488,6 +488,7 @@ template {
   font-size: 12px;
   line-height: 14px;
   color: #333333;
+  outline: none;
 }
 
 .search__button {
@@ -2019,6 +2020,83 @@ template {
   line-height: 23px;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media (min-width: 992px) {
+  .navbar__search:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #0A223D;
+            box-shadow: 1px 1px 10px 2px #0A223D;
+  }
+  .navbar-menu__item:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+            box-shadow: 1px 1px 10px 2px #9ecdf3;
+  }
+  .user__name:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #0A223D;
+            box-shadow: 1px 1px 10px 2px #0A223D;
+  }
+  .logo__image:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #0A223D;
+            box-shadow: 1px 1px 10px 2px #0A223D;
+  }
+  .hotel-info__rating:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #0A223D;
+            box-shadow: 1px 1px 10px 2px #0A223D;
+  }
+  .booking__number:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+            box-shadow: 1px 1px 10px 2px #9ecdf3;
+  }
+  .booking__button:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+            box-shadow: 1px 1px 10px 2px #9ecdf3;
+  }
+  .packages__price-button:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+            box-shadow: 1px 1px 10px 2px #9ecdf3;
+  }
+  .newsletter__subscripen:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+            box-shadow: 1px 1px 10px 2px #9ecdf3;
+  }
+  .card__button:hover {
+    border: 0;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 10px 2px #9ecdf3;
+            box-shadow: 1px 1px 10px 2px #9ecdf3;
+  }
+  .footer__number:hover {
+    border: 0;
+    border-radius: 6px;
+    background-color: #0f3b6d;
+    -webkit-box-shadow: 1px 1px 7px 5px #0f3b6d;
+            box-shadow: 1px 1px 7px 5px #0f3b6d;
+  }
+  .footer__letter:hover {
+    border: 0;
+    border-radius: 6px;
+    background-color: #0f3b6d;
+    -webkit-box-shadow: 1px 1px 7px 5px #0f3b6d;
+            box-shadow: 1px 1px 7px 5px #0f3b6d;
+  }
 }
 
 .thanks {
