@@ -23,28 +23,28 @@
 
 <body>
   <header class="navbar navbar--mobile--fixed">
-
+  
     <div class="container">
-
+  
       <div class="navbar-top">
         <a href="https://lidiya-style.ru/Homework/tour-plan" class="logo">
           <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
         </a><!-- /.logo -->
-
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-          <input type="text" class="search__input" placeholder="Search Location">
-          <button class="search__button">
-            <img src="img/search.svg" alt="Icon: search">
-          </button>
-        </form><!-- /.search -->
-
+  
+        <div class="navbar-top__form">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+            <input type="text" class="search__input" placeholder="Search Location">
+            <button class="search__button">
+              <img src="img/search.svg" alt="Icon: search">
+            </button>
+          </form><!-- /.search -->
+        </div><!-- /.navbar-top__form -->
+  
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
-          <span class="user__name">
-            <?php echo 'Nathan' ?>
-          </span>
+          <span class="user__name">Nathan</span>
         </a><!-- /.user -->
-
+  
         <button class="menu-button navbar-top__menu-button">
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
@@ -52,39 +52,38 @@
         </button>
       </div><!-- /.navbar-top -->
     </div><!-- /.container -->
-
+  
     <div class="navbar-bottom">
       <div class="container container-navbar">
         <ul class="navbar-menu navbar-menu--mobile">
-
+  
           <li class="navbar-menu__form navbar-menu__form--mobile--visible">
             <a href="#" class="user navbar__user navbar__user--mobile--visible">
               <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
               <span class="user__name user__name--light">Nathan</span>
             </a><!-- /.user -->
           </li>
-
+  
           <li class="navbar-menu__form navbar-menu__form--mobile--visible">
             <form action="#" class="search navbar__search navbar__search--mobile--visible">
-              <input type="text" class="search__input" placeholder="Search Location">
+              <input type="search" class="search__input" placeholder="Search Location">
               <button class="search__button">
                 <img src="img/search.svg" alt="Icon: search">
               </button>
             </form><!-- /.search -->
           </li>
-
-          <li class="navbar-menu__item navbar-menu__item--indent"><a href="#" class="navbar-menu__link">All Deals</a>
-          </li>
+  
+          <li class="navbar-menu__item navbar-menu__item--indent"><a href="#" class="navbar-menu__link">All Deals</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
-          <li class="navbar-menu__item"><a href="activities.php" class="navbar-menu__link">Activities</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
-          <li class="navbar-menu__item"><a href="restaurants.php" class="navbar-menu__link">Restaurants</a></li>
+          <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Restaurants</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Events</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Rodrigues</a></li>
         </ul><!-- /.navbar-menu -->
       </div><!-- /.container -->
     </div>
-
+  
   </header>
 
   <nav class="breadcrumb">
@@ -215,11 +214,19 @@
       <div class="footer__contact-form">
         <h3 class="footer__title footer__title-form">Send us a message</h3>
 
-        <form action="send.php" method="POST" class="footer__form">
-          <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-          <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+        <form action="send.php" method="POST" class="footer__form form">
 
-          <textarea class="footer__message" cols="30" rows="10" placeholder="Message" name="message"></textarea>
+          <div class="footer__input-group">
+            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" minlength="2"
+              required>
+          </div><!-- /.footer__input-group -->
+
+          <div class="footer__input-group">
+            <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" minlength="10"
+              required>
+          </div><!-- /.footer__input-group -->
+
+          <textarea class="messege footer__message" placeholder="Message" name="message"></textarea>
 
           <button class="button footer__button" type="submit">Send</button>
 
@@ -248,14 +255,89 @@
   </div><!-- /.container -->
 </footer><!-- /.footer -->
 
+<!-- -----------//////////////----------- -->
+<!-- -----------/////MODAL////----------- -->
 
+<div class="modal" id="booking-modal">
+
+  <div class="modal__overlay"></div><!-- /.modal__overlay -->
+
+  <div class="modal__dialog">
+    <div class="modal__dialog-wrapper">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="icon: close">
+      </a>
+
+      <h3 class="modal__title modal__title-form">Booking</h3>
+
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" minlength="10"
+          required>
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+
+        <textarea class="messege modal__message" placeholder="Message" name="message"></textarea>
+
+        <div class="modal__info-wrapper">
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </div><!-- /.modal__info-wrepper -->
+
+      </form><!-- /.modal__form -->
+    </div><!-- /.modal__dialog-wrapper -->
+  </div><!-- /.modal__dialog -->
+
+</div><!-- /.modal -->
+
+<!-- -----------/////MODAL////----------- -->
+<!-- -----------//////////////----------- -->
+<!-- -----------//////////////----------- -->
+<!-- -----------/////MODAL-rating////----------- -->
+
+<div class="modal" id="rating-modal">
+
+  <div class="modal__overlay"></div><!-- /.modal__overlay -->
+
+  <div class="modal__dialog">
+    <div class="modal__dialog-wrapper">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="icon: close">
+      </a>
+
+      <h3 class="modal__title modal__title-form">Send us a feedback</h3>
+
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" minlength="10"
+          required>
+        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+
+        <textarea class="messege modal__message" placeholder="Message" name="message"></textarea>
+
+        <div class="modal__info-wrapper">
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </div><!-- /.modal__info-wrepper -->
+
+      </form><!-- /.modal__form -->
+    </div><!-- /.modal__dialog-wrapper -->
+  </div><!-- /.modal__dialog -->
+
+
+
+</div><!-- /.modal -->
+
+<!-- -----------/////MODAL////----------- -->
+<!-- -----------//////////////----------- -->
+
+<script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=e75c9725-ce8c-4892-beaa-3a460827a6ae&lang=ru_RU"></script>
-<!-- убрала атрибут type="text/javascript" из яндекс.скрипта(карты)-->
 <script src="js/map.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.mask.min.js"></script>
 <script src="js/main.js"></script>
-<!-- <script src="js/jquery-2.2.4.min.js"></script> -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/parallax.min.js"></script>
 </body>
 

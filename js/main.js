@@ -98,21 +98,22 @@ menuButton.on('click', function () {
   };
 
   // Обработка формы отправки
-    
+    $(".phone").mask('(000) 000-0000');
     $(".form").each(function() {
       $(this).validate({
       errorClass: "invalid",      
       messages: {
         name: {
           required: "Please specify your name",
-          minlength: "Please write at least 2 characters",
+          minlength: "Please write at least 2 characters"
         },
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Required email format - name@domain.com"
         },
         phone: {
           required: "Please write your phone number",
+          minlength: "Please write at least 10 characters"
         },
       }
     });
@@ -123,7 +124,7 @@ menuButton.on('click', function () {
       messages: {        
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Required email format - name@domain.com"
         },        
       }    
     });
