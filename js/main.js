@@ -130,6 +130,11 @@ menuButton.on('click', function () {
     });
 
 // анимация
-AOS.init();
+AOS.init({
+  disable: function() {
+    var maxWidth = 992;
+    return window.innerWidth < maxWidth;
+  }
+});
     
 });
