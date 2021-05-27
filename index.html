@@ -4,17 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta http-equiv=”refresh” content=”0; URL=https://lidiya-style.ru/tour-plan>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="preload">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <!-- rel="preconnect -->
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
+      rel="stylesheet">
 
-
+  <link rel="preload" as="style" href="css/swiper-bundle.min.css">  
+  <link rel="preload" href="js/swiper-bundle.min.js" as="script">
+  <link rel="preload" href="js/jquery.validate.min.js" as="script">  
+  <link rel="preload" href="js/parallax.min.js" as="script">
+    
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -201,7 +206,7 @@
           <div class="map hotel-price__map" id="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5589.73224282149!2d98.29845935397785!3d7.8386652822769225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1622044337137!5m2!1sru!2sru"
-              width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              width="576" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div><!-- /.map -->
 
         </div><!-- /.hotel-prise -->
@@ -209,7 +214,7 @@
       </div><!-- /.hotel-grid -->
     </div><!-- /.container -->
   </section><!-- /.hotei -->
-  <!-- ---------------//////////////////////----------------------- -->
+  
   <!-- ---------------/////PACKAGES/////////----------------------- -->
 
   <article class="packages">
@@ -447,7 +452,7 @@
   </article><!-- /.packages -->
 
   <!-- ---------------/////PACKAGES/////////----------------------- -->
-  <!-- ---------------//////////////////////----------------------- -->
+  
 
   <section class="newsletter parallax-window" data-parallax="scroll" data-image-src="img/newsletter-bg.jpg">
     <div class="container newsletter-wrapper">
@@ -640,14 +645,14 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title--inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="https://www.facebook.com/" class="footer__link">
-              <img src="img/fb.svg" alt="icon: facebook"class="footer__icon-link">
+            <a href="https://www.facebook.com/" class="footer__link" target="_blank" rel="nofollow noopener">
+              <img src="img/fb.svg" alt="icon: facebook" class="footer__icon-link">
             </a>
-            <a href="https://www.youtube.com/" class="footer__link">
-              <img src="img/youtube.svg" alt="icon: youtube"class="footer__icon-link">
+            <a href="https://www.youtube.com/" class="footer__link" target="_blank" rel="nofollow noopener">
+              <img src="img/youtube.svg" alt="icon: youtube" class="footer__icon-link">
             </a>
-            <a href="https://www.instagram.com/" class="footer__link">
-              <img src="img/circleinstagram.svg" alt="icon: circleinstagram"class="footer__icon-link">
+            <a href="https://www.instagram.com/" class="footer__link" target="_blank" rel="nofollow noopener">
+              <img src="img/circleinstagram.svg" alt="icon: circleinstagram" class="footer__icon-link">
             </a>
           </div><!-- footer__social-links -->
         </div><!-- /.footer__social-network -->
@@ -671,7 +676,7 @@
           <ul class="footer__ul">
             <li class="footer__item footer__item--mb-2">
               <div class="footer__icon-wrapper">
-                <img src="img/map-marker.svg" alt="icon: map-marker" class="footer__icon-map">
+                <img src="img/map-marker.svg" alt="icon: map-marker" class="footer__icon">
               </div>
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
@@ -738,7 +743,7 @@
     </div><!-- /.container -->
   </footer><!-- /.footer -->
 
-<!-- -----------//////////////----------- -->
+
 <!-- -----------/////MODAL////----------- -->
 
   <div class="modal" id="booking-modal">
@@ -772,8 +777,8 @@
   </div><!-- /.modal -->
 
 <!-- -----------/////MODAL////----------- -->
-<!-- -----------//////////////----------- -->
-<!-- -----------//////////////----------- -->
+
+
 <!-- -----------/////MODAL-rating////----------- -->
 
 <div class="modal" id="rating-modal">
@@ -809,10 +814,10 @@
 </div><!-- /.modal -->
 
 <!-- -----------/////MODAL////----------- -->
-<!-- -----------//////////////----------- -->
+
 
   <script defer src="js/jquery-3.6.0.min.js"></script>
-  <script defer src="js/swiper-bundle.min.js"></script>  
+  <script defer src="js/swiper-bundle.min.js"></script>
   <script defer src="js/jquery.validate.min.js"></script>
   <script defer src="js/aos.js"></script>
   <script defer src="js/jquery.mask.min.js"></script>

@@ -7,16 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best Tour Plan - Hotel Booking</title>
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/Homework/tour-plan/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet">
 
-
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
 
 </head>
@@ -122,7 +122,7 @@
   <div class="container">
     <div class="footer-wrapper">
       <a href="https://lidiya-style.ru/tour-plan" class="footer__logo-link"><img src="img/vertical-logo.svg"
-          alt="Best tour plan" class="logo footer__logo"></a>
+          alt="Best tour plan" class="logo footer__logo" loading="lazy"></a>
       <!-- list-1 -->
       <div class="footer__list footer__categories">
         <h3 class="footer__title footer__title-categories">All categories</h3>
@@ -156,10 +156,15 @@
       <div class="footer__social-network">
         <h3 class="footer__title footer__title--inline">Social Network</h3>
         <div class="footer__social-links">
-          <a href="https://www.facebook.com/" class="footer__link"><img src="img/fb.svg" alt="icon: facebook"></a>
-          <a href="https://www.youtube.com/" class="footer__link"><img src="img/youtube.svg" alt="icon: youtube"></a>
-          <a href="https://www.instagram.com/" class="footer__link"><img src="img/circleinstagram.svg"
-              alt="icon: circleinstagram"></a>
+          <a href="https://www.facebook.com/" class="footer__link">
+            <img src="img/fb.svg" alt="icon: facebook" class="footer__icon-link">
+          </a>
+          <a href="https://www.youtube.com/" class="footer__link">
+            <img src="img/youtube.svg" alt="icon: youtube" class="footer__icon-link">
+          </a>
+          <a href="https://www.instagram.com/" class="footer__link">
+            <img src="img/circleinstagram.svg" alt="icon: circleinstagram" class="footer__icon-link">
+          </a>
         </div><!-- footer__social-links -->
       </div><!-- /.footer__social-network -->
 
@@ -182,14 +187,14 @@
         <ul class="footer__ul">
           <li class="footer__item footer__item--mb-2">
             <div class="footer__icon-wrapper">
-              <img src="img/map-marker.svg" alt="icon: map-marker" class="footer__icon">
+              <img src="img/map-marker.svg" alt="icon: map-marker" class="footer__icon-map">
             </div>
             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
           </li>
 
           <li class="footer__item footer__item--mb-2">
             <div class="footer__icon-wrapper">
-              <img src="img/phone-call.svg" alt="icon: phone-call" class="footer__icon">
+              <img src="img/phone-call-footer.svg" alt="icon: phone-call" class="footer__icon">
             </div>
             <div class="footer__num">
               <div class="footer__num-link"><a href="tel:2691500" class="footer__number">Tel (business hours) : 269
@@ -256,9 +261,6 @@
   </div><!-- /.container -->
 </footer><!-- /.footer -->
 
-<!-- -----------//////////////----------- -->
-<!-- -----------/////MODAL////----------- -->
-
 <div class="modal" id="booking-modal">
 
   <div class="modal__overlay"></div><!-- /.modal__overlay -->
@@ -266,7 +268,7 @@
   <div class="modal__dialog">
     <div class="modal__dialog-wrapper">
       <a href="#" class="modal__close">
-        <img src="img/close.svg" alt="icon: close">
+        <img src="img/close.svg" alt="icon: close" class="modal__icon-close">
       </a>
 
       <h3 class="modal__title modal__title-form">Booking</h3>
@@ -289,11 +291,6 @@
   </div><!-- /.modal__dialog -->
 
 </div><!-- /.modal -->
-
-<!-- -----------/////MODAL////----------- -->
-<!-- -----------//////////////----------- -->
-<!-- -----------//////////////----------- -->
-<!-- -----------/////MODAL-rating////----------- -->
 
 <div class="modal" id="rating-modal">
 
@@ -328,18 +325,13 @@
 
 </div><!-- /.modal -->
 
-<!-- -----------/////MODAL////----------- -->
-<!-- -----------//////////////----------- -->
-
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.1/?apikey=e75c9725-ce8c-4892-beaa-3a460827a6ae&lang=ru_RU"></script>
-<script src="js/map.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/jquery.mask.min.js"></script>
-<script src="js/main.js"></script>
-<script src="js/parallax.min.js"></script>
+<script defer src="js/jquery-3.6.0.min.js"></script>
+<script defer src="js/swiper-bundle.min.js"></script>
+<script defer src="js/jquery.validate.min.js"></script>
+<script defer src="js/aos.js"></script>
+<script defer src="js/jquery.mask.min.js"></script>
+<script defer src="js/main.min.js"></script>
+<script defer src="js/parallax.min.js"></script>
 </body>
 
 </html>
