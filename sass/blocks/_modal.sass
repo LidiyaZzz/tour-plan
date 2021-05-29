@@ -18,21 +18,26 @@
     position: fixed
     top: 50%
     left: 50%
-    transform: translate(-50%, -52%)
+    transform: translate(-50%, -30%)
     width: 478px
-    min-height: 487px
-    background-color: $dark
+    height: 100vh
     color: $light
-    border-radius: 8px
     z-index: 101
     visibility: hidden
     opacity: 0
     transition: opacity 0.3s
+    overflow: hidden
     &-wrapper
-      padding: 33px 88px
       width: 100%
-      height: 100%
+      height: 90vh
       overflow: auto
+      position: relative
+    &-scroll
+      width: 478px
+      height: 487px
+      background-color: $dark
+      border-radius: 8px
+      padding: 33px 88px
     &--visible
       visibility: visible
       opacity: 1

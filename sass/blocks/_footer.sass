@@ -41,7 +41,7 @@
   &__form
     display: flex
     justify-content: space-between
-    align-items: center
+    align-items: start
     flex-wrap: wrap
   &__ul
     padding: 0
@@ -88,13 +88,13 @@
     &::placeholder
       @include placeholder
     &-group
-      min-width: 255px
+      width: 255px
       margin-bottom: 15px
       flex-basis: 47%
   &__message
     @include messege
     width: 539px
-    min-height: 123px
+    height: 123px
     flex-basis: 100%
     margin-bottom: 23px
     &::placeholder
@@ -143,3 +143,6 @@
     font-weight: normal
     font-size: 14px
     line-height: 160%
+  &__num
+    &--nowrap
+      white-space: nowrap

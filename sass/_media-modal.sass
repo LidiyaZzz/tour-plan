@@ -5,11 +5,11 @@
     &__dialog
       top: 20px
       transform: translate(-50%, 0%)
-      width: 70vw
+      width: 60vw
       height: 90vh
-      &-wrapper
-        padding: 20px 20px
-        height: 90vh
+      &-scroll
+        padding: 20px 40px
+        width: 100%
     &__input
       width: 100%
     &__message
@@ -17,7 +17,7 @@
     &__info
       margin-left: 0
       margin-top: 5px
-      &-wrapper
+      &-scroll
         flex-direction: column
         justify-content: start
         align-items: start
@@ -27,3 +27,11 @@
   .modal
     &__dialog
       width: 80vw
+
+// ---------- 480px-----------
+@media (max-width: 480px)
+  .modal
+    &__info
+      &-wrapper
+        flex-direction: column
+        align-items: start

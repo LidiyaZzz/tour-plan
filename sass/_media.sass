@@ -100,14 +100,23 @@
       line-height: 38px
       margin-bottom: 50px
     &-slider
+      &__button
+        transform: translateY(-55%)
+        &--next
+          right: 0
+        &--prev
+          left: 0
       &__item
         max-width: 579px
+        &::before
+          display: none
+        &::after
+          display: none
 
     &-wrapper
       flex-wrap: wrap
     &__card
       margin-bottom: 20px
-    &__title
 
   .activities
     padding: 45px 0 50px 0
@@ -227,6 +236,16 @@
       margin-bottom: 20px
     &-slider
       height: 250px
+      &__button
+        width: 10px
+        height: 10px
+        &--next
+          right: 7px
+          background-image: url(../img/chevron-right.svg)
+        &--prev
+          left: 7px
+          background-image: url(../img/chevron-left.svg)
+
   .newsletter
     padding: 76px 0 83px 0
     &__title
@@ -236,6 +255,14 @@
   .card
     width: 100%
     min-height: 255px
+  .activities
+    &__card
+      &--one
+        order: -3
+      &--two
+        order: -1
+      &--three
+        order: -2
   .reviews
     &__title
       font-size: 24px
@@ -299,6 +326,7 @@
         height: 90px
       &__text
         height: 266px
+        text-align: left
       &__button
         &--prev
           margin-left: -105px
