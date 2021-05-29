@@ -35,7 +35,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'lidiya_tour-plan@mail.ru'; // Логин на почте
-    $mail->Password   = 'TouRPlaN123321'; // Пароль на почте
+    $mail->Password   = '987987TouRPlaN'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('lidiya_tour-plan@mail.ru', 'Best Tour-plan'); // Адрес самой почты и имя отправителя

@@ -10,9 +10,15 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <!-- rel="preconnect -->
   <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
     rel="stylesheet">
+
+  <link rel="preload" as="style" href="css/swiper-bundle.min.css">
+  <link rel="preload" href="js/swiper-bundle.min.js" as="script">
+  <link rel="preload" href="js/jquery.validate.min.js" as="script">
+  <link rel="preload" href="js/parallax.min.js" as="script">
 
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/aos.css">
@@ -23,14 +29,14 @@
 
 <body>
   <header class="navbar navbar--mobile--fixed">
-  
+
     <div class="container">
-  
+
       <div class="navbar-top">
         <a href="https://lidiya-style.ru/tour-plan" class="logo">
           <img src="img/horizontal-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
         </a><!-- /.logo -->
-  
+
         <div class="navbar-top__form">
           <form action="#" class="search navbar__search navbar__search--mobile--hidden">
             <input type="text" class="search__input" placeholder="Search Location">
@@ -39,12 +45,12 @@
             </button>
           </form><!-- /.search -->
         </div><!-- /.navbar-top__form -->
-  
+
         <a href="#" class="user navbar__user navbar__user--mobile--hidden">
           <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
           <span class="user__name">Nathan</span>
         </a><!-- /.user -->
-  
+
         <button class="menu-button navbar-top__menu-button">
           <span class="menu-button__line"></span>
           <span class="menu-button__line"></span>
@@ -52,18 +58,18 @@
         </button>
       </div><!-- /.navbar-top -->
     </div><!-- /.container -->
-  
+
     <div class="navbar-bottom">
       <div class="container container-navbar">
         <ul class="navbar-menu navbar-menu--mobile">
-  
+
           <li class="navbar-menu__form navbar-menu__form--mobile--visible">
             <a href="#" class="user navbar__user navbar__user--mobile--visible">
               <img src="img/user-avatar.jpg" alt="avatar: Nathan" class="user__avatar">
               <span class="user__name user__name--light">Nathan</span>
             </a><!-- /.user -->
           </li>
-  
+
           <li class="navbar-menu__form navbar-menu__form--mobile--visible">
             <form action="#" class="search navbar__search navbar__search--mobile--visible">
               <input type="search" class="search__input" placeholder="Search Location">
@@ -72,8 +78,9 @@
               </button>
             </form><!-- /.search -->
           </li>
-  
-          <li class="navbar-menu__item navbar-menu__item--indent"><a href="#" class="navbar-menu__link">All Deals</a></li>
+
+          <li class="navbar-menu__item navbar-menu__item--indent"><a href="#" class="navbar-menu__link">All Deals</a>
+          </li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
           <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotel Day Packages</a></li>
@@ -83,7 +90,7 @@
         </ul><!-- /.navbar-menu -->
       </div><!-- /.container -->
     </div>
-  
+
   </header>
 
   <nav class="breadcrumb">
@@ -115,8 +122,6 @@
       </div><!-- /.thanks-info -->
     </div><!-- /.container -->
   </section><!-- /.hotei -->
-
-
 
 <footer class="footer">
   <div class="container">
@@ -156,13 +161,13 @@
       <div class="footer__social-network">
         <h3 class="footer__title footer__title--inline">Social Network</h3>
         <div class="footer__social-links">
-          <a href="https://www.facebook.com/" class="footer__link">
+          <a href="https://www.facebook.com/" class="footer__link" target="_blank" rel="nofollow noopener">
             <img src="img/fb.svg" alt="icon: facebook" class="footer__icon-link">
           </a>
-          <a href="https://www.youtube.com/" class="footer__link">
+          <a href="https://www.youtube.com/" class="footer__link" target="_blank" rel="nofollow noopener">
             <img src="img/youtube.svg" alt="icon: youtube" class="footer__icon-link">
           </a>
-          <a href="https://www.instagram.com/" class="footer__link">
+          <a href="https://www.instagram.com/" class="footer__link" target="_blank" rel="nofollow noopener">
             <img src="img/circleinstagram.svg" alt="icon: circleinstagram" class="footer__icon-link">
           </a>
         </div><!-- footer__social-links -->
@@ -187,7 +192,7 @@
         <ul class="footer__ul">
           <li class="footer__item footer__item--mb-2">
             <div class="footer__icon-wrapper">
-              <img src="img/map-marker.svg" alt="icon: map-marker" class="footer__icon-map">
+              <img src="img/map-marker.svg" alt="icon: map-marker" class="footer__icon">
             </div>
             9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
           </li>
@@ -197,12 +202,18 @@
               <img src="img/phone-call-footer.svg" alt="icon: phone-call" class="footer__icon">
             </div>
             <div class="footer__num">
-              <div class="footer__num-link"><a href="tel:2691500" class="footer__number">Tel (business hours) : 269
-                  1500</a></div>
+              <div class="footer__num-link"><a href="tel:2691500" class="footer__number">Tel (business hours) :
+                  <span class="footer__num-nowrap"> 269 1500</span></a>
+              </div>
               <div class="footer__num-link"><a href="tel:52566138" class="footer__number">Tel (hotline) Monday -
-                  Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</a></div>
+                  Saturday:
+                  <span class="footer__num-nowrap">52-56-61-38</span>
+                  <span class="footer__num-nowrap"> (08:00 am – 20:00 pm) </span></a>
+              </div>
               <div class="footer__num-link"><a href="tel:52566138" class="footer__number">Tel (hotline) Sunday:
-                  52-56-61-38 (08:00 am – 14:00 pm)</a></div>
+                  <span class="footer__num-nowrap">52-56-61-38</span>
+                  <span class="footer__num-nowrap"> (08:00 am – 20:00 pm) </span></a>
+              </div>
             </div><!-- /.footer__num -->
           </li>
 
@@ -228,7 +239,7 @@
           </div><!-- /.footer__input-group -->
 
           <div class="footer__input-group">
-            <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" minlength="10"
+            <input type="tel" class="input footer__input phone" placeholder="Phone Number*" name="phone" minlength="11"
               required>
           </div><!-- /.footer__input-group -->
 
@@ -261,67 +272,39 @@
   </div><!-- /.container -->
 </footer><!-- /.footer -->
 
+
 <div class="modal" id="booking-modal">
 
   <div class="modal__overlay"></div><!-- /.modal__overlay -->
 
   <div class="modal__dialog">
     <div class="modal__dialog-wrapper">
-      <a href="#" class="modal__close">
-        <img src="img/close.svg" alt="icon: close" class="modal__icon-close">
-      </a>
+      <div class="modal__dialog-scroll">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="icon: close" class="modal__icon-close">
+        </a>
 
-      <h3 class="modal__title modal__title-form">Booking</h3>
+        <h3 class="modal__title modal__title-form">Booking</h3>
 
-      <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" minlength="10"
-          required>
-        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required
+            minlength="2">
+          <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" minlength="11"
+            required>
+          <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
 
-        <textarea class="messege modal__message" placeholder="Message" name="message"></textarea>
+          <textarea class="messege modal__message" placeholder="Message" name="message"></textarea>
 
-        <div class="modal__info-wrapper">
-          <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
-        </div><!-- /.modal__info-wrepper -->
+          <div class="modal__info-wrapper">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div><!-- /.modal__info-wrepper -->
 
-      </form><!-- /.modal__form -->
+        </form><!-- /.modal__form -->
+      </div>
+      <!-- /.modal__dialog-scroll -->
     </div><!-- /.modal__dialog-wrapper -->
   </div><!-- /.modal__dialog -->
-
-</div><!-- /.modal -->
-
-<div class="modal" id="rating-modal">
-
-  <div class="modal__overlay"></div><!-- /.modal__overlay -->
-
-  <div class="modal__dialog">
-    <div class="modal__dialog-wrapper">
-      <a href="#" class="modal__close">
-        <img src="img/close.svg" alt="icon: close">
-      </a>
-
-      <h3 class="modal__title modal__title-form">Send us a feedback</h3>
-
-      <form action="send.php" method="POST" class="modal__form form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="tel" class="input modal__input phone" placeholder="Phone Number*" name="phone" minlength="10"
-          required>
-        <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
-
-        <textarea class="messege modal__message" placeholder="Message" name="message"></textarea>
-
-        <div class="modal__info-wrapper">
-          <button class="button modal__button" type="submit">Send</button>
-          <span class="modal__info">* Required Fields</span>
-        </div><!-- /.modal__info-wrepper -->
-
-      </form><!-- /.modal__form -->
-    </div><!-- /.modal__dialog-wrapper -->
-  </div><!-- /.modal__dialog -->
-
-
 
 </div><!-- /.modal -->
 
